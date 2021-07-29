@@ -1,0 +1,38 @@
+<main class="holder2">
+    <div class="columna left">
+        <h2>Contacto Rápido</h2>
+        <form action="/contacto" method="post" class="formulario">
+            <p>
+                <label for="">Nombre</label>
+                <input type="text" name="nombre">
+            </p>
+            <p>
+                <label for="">Email</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label for="">Teléfono</label>
+                <input type="text" name="tel">
+            </p>
+            <p>
+                <label for="comentario">Comentario</label>
+                <textarea name="mensaje" id="comentario"></textarea>
+            </p>
+            <p class="acciones"><input type="submit" value="Enviar"></p>
+        </form>
+
+        <p>{{message}}</p>
+        
+    </div>
+    <div class="columna right">
+        <h2>REDES</h2>
+        <div class="redes">
+            <ul>
+                <li><a href="#"><img src="images/contacto/redes01.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="images/contacto/redes02.svg" alt="twitter"></a></li>
+                <li><a href="#"><img src="images/contacto/redes03.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/contacto/redes04.svg" alt="youtube"></a></li>
+            </ul>
+        </div>
+    </div>
+</main>

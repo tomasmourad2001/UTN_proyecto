@@ -1,0 +1,304 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1.5em 1em;
+    border-bottom: 1px solid #eee;
+}
+
+header h1{
+    display: inline-block;
+    margin-left: 0.5em;
+    font-style: italic;
+    color: #393939;
+}
+
+nav{
+    margin-bottom: 1em;
+    box-shadow: 0px 9px 12px 2px #eee;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 18%;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+nav ul li a:hover{
+    background-color: #eee;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.holder2{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.activo{
+    background: #eee;
+}
+
+footer{
+    background: black;
+    color: white;
+    clear: both;
+    display: flex;
+    padding: 1em 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.texto-footer{
+    padding: 0;
+}
+
+.texto-footer{
+    font-size: 14px;
+}
+
+/* Seccion Home */
+
+.home{
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
+    overflow: hidden;
+}
+
+.homeimg{
+    width: 40%;
+    float: left;
+    border-radius: 10px;
+    border: 3px solid #eee;
+}
+
+.bienvenidos{
+    width: 60%;
+    float: right;
+    padding: 1em;
+}
+
+.bienvenidos h2{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.bienvenidos p{
+    text-align: justify;
+}
+
+.homeimg, .bienvenidos{
+    box-sizing: border-box;
+}
+
+.home-sep{
+    background-image:linear-gradient(to right, hsla(0, 0%, 0%, 0.5), hsla(120, 82%, 33%, 0.5)), url(../images/index/home-sep.jpg);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7em 0;
+    box-shadow: 0 0 1em black;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-sep h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0 0 1em #fff;
+}
+
+.noticias-r{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.noti-r .col{
+    transition: all 0.3s ease-in-out;
+}
+
+.noti-r .col:hover{
+    transform: scale(1.1);
+}
+
+/* Fin Home */
+
+/* Seccion Nosotros */
+
+main h2{
+    font-size: 2em;
+    font-weight: 700;
+    margin: 1em 0 0.5em;
+}
+
+.parrafos .parrafo1,
+.parrafos .parrafo2{
+    box-sizing: border-box;
+    display:block;
+    overflow: hidden;
+    margin-bottom: 3em;
+    align-items: center;
+}
+
+.parrafos .parrafo1 p{
+    width: 75%;
+    float: left;
+    padding: 3em 1.5em 0 0;
+    text-align: justify;
+}
+
+.parrafos .parrafo1 img{
+    width: 25%;
+    float: right;
+    border-radius: 5px;
+    border: 5px solid #eee;
+}
+
+.parrafos .parrafo2 p{
+    width: 75%;
+    float: right;
+    padding: 3em 0 0 1.5em;
+    text-align: justify;
+}
+
+.parrafos .parrafo2 img{
+    width: 25%;
+    float: left;
+    border-radius: 5px;
+    border: 5px solid #eee;
+}
+
+.parrafos .parrafo3{
+    text-align: justify;
+}
+
+/* Fin Nosotros */
+
+/* Seccion Novedades */
+
+.novedades h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.novedades h4{
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+/* Fin Novedades */
+
+
+/* Seccion Galeria */
+
+.texto-galeria{
+    font-size: 20px;
+    margin-bottom: 3em;
+}
+
+/* Fin Galeria */
+
+/* Seccion Contacto */
+
+.columna{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+
+.columna.left{
+    border-right: 1px solid gray;
+}
+
+.columna.right ul li a img{
+    transition: 0.6s all ease-in-out;
+}
+
+ .columna.right ul{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+
+.columna.right ul li a img{
+    width: 50px;
+    margin: 0.5em 0;
+}
+
+.columna.right ul li a img:hover{
+    transform: rotate(1turn);
+}
+
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+
+.formulario input,
+.formulario textarea{
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+}
+
+.formulario input[type="submit"]{
+    background-color: #eb3939;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 1em;
+    width: auto;
+    cursor: pointer;
+}
+
+.formulario textarea{
+    height: 10em;
+    resize: none;
+}
+
+.formulario .acciones{
+    text-align: center;
+}
