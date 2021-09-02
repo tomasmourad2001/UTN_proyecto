@@ -1,25 +1,11 @@
 <main class="holder2">
     <h2>Novedades</h2>
+    {{#each novedades}}
     <div class="novedades">
-        <h3>Titulo</h3>
-        <h4>Subtitulo</h4>
-        <p>Descripcion - Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at, quia distinctio
-            reprehenderit totam vitae illum in libero ut, soluta aspernatur fugiat iste amet magnam accusamus modi
-            obcaecati possimus aperiam.</p>
-        <hr>
-
-        <h3>Titulo</h3>
-        <h4>Subtitulo</h4>
-        <p>Descripcion - Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at, quia distinctio
-            reprehenderit totam vitae illum in libero ut, soluta aspernatur fugiat iste amet magnam accusamus modi
-            obcaecati possimus aperiam.</p>
-        <hr>
-
-        <h3>Titulo</h3>
-        <h4>Subtitulo</h4>
-        <p>Descripcion - Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at, quia distinctio
-            reprehenderit totam vitae illum in libero ut, soluta aspernatur fugiat iste amet magnam accusamus modi
-            obcaecati possimus aperiam.</p>
+        <h3>{{titulo}}</h3>
+        <h4>{{subtitulo}}</h4>
+        <p>{{cuerpo}}</p>
         <hr>
     </div>
+    {{/each}}
 </main>

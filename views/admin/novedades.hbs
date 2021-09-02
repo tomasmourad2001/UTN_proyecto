@@ -2,4 +2,39 @@
     <div class="row">
         <p class="text-end">Hola {{usuario}}! <a class="btn btn-danger" href="/admin/login/logout">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a></p>
     </div>
+    <div class="row">
+        <div class="col-7" style="margin-top:-9px ;">
+            <h2>Listado de Novedades</h2>
+        </div>
+        <div class="col-5 text-end">
+            <a href="" class="btn btn-success">
+                <i class="fas fa-plus"></i> Nuevo
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table" style="margin-top: 15px;">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td class="text-end">
+                            <a href="" class="btn btn-outline-secondary"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-outline-secondary"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
