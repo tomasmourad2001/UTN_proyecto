@@ -7,7 +7,7 @@
             <h2>Listado de Novedades</h2>
         </div>
         <div class="col-5 text-end">
-            <a href="" class="btn btn-success">
+            <a href="/admin/novedades/agregar" class="btn btn-success">
                 <i class="fas fa-plus"></i> Nuevo
             </a>
         </div>
@@ -28,7 +28,7 @@
                         <th scope="row">{{id}}</th>
                         <td>{{titulo}}</td>
                         <td class="text-end">
-                            <a href="" class="btn btn-outline-secondary"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-outline-secondary"><i class="fas fa-pencil-alt"></i></a>
                             <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-outline-secondary"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
